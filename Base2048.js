@@ -47,23 +47,24 @@
                 case 'ArrowLeft':
                     // insérer algo move left
                     var elem = $('table tr:first-child');
-                    elem.css({"background-color": "yellow", "font-size": "200%"})
-                    
-                    console.log("Left");
+                    elem.css({"background-color": "yellow", "font-size": "200%"})   
                     break;
                 case 'ArrowUp':
                     // insérer algo move up
-                    left
-                    var elem = $('table tr:first-child');
-                    elem.css({"background-color": "yellow", "font-size": "200%"})
-                    console.log("Up");
+                    var elem = $('table tr:first-child').prev().insertAfter(elem);
+                    elem.css({"background-color": "green", "font-size": "200%"})
+                   
                     break;
                 case 'ArrowRight':
                     // insérer algo move right
+                    var elem = $('table tr:first-child');
+                    elem.css({"background-color": "red", "font-size": "200%"})
                     console.log("Right");
                     break;
                 case 'ArrowDown':
                     // insérer algo move down
+                    var elem = $('table tr:first-child');
+                    elem.css({"background-color": "black", "font-size": "200%"})
                     console.log("Down");
                     break;
             }
